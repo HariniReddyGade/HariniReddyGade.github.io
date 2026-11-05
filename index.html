@@ -1,0 +1,331 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Harini Reddy — Software Engineer Portfolio">
+  <title>Harini Reddy | Software Engineer</title>
+  <style>
+    :root {
+      --bg: #090e1b;
+      --panel: #121c2e;
+      --text: #f1f5f9;
+      --muted: #a2b1c5;
+      --accent: #72e2c2;
+      --border: #29384d;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, "Segoe UI", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    a { color: inherit; text-decoration: none; }
+    .container { max-width: 1080px; margin: auto; padding: 0 24px; }
+    header {
+      position: sticky;
+      top: 0;
+      background: rgba(9,14,27,.95);
+      border-bottom: 1px solid var(--border);
+      z-index: 10;
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 72px;
+      gap: 20px;
+    }
+    .logo { font-weight: 800; font-size: 20px; color: var(--accent); }
+    .nav-links { display: flex; flex-wrap: wrap; gap: 22px; }
+    .nav-links a { font-size: 14px; color: var(--muted); }
+    .nav-links a:hover, a:hover { color: var(--accent); }
+    section { padding: 80px 0; scroll-margin-top: 70px; }
+    .hero { padding: 120px 0 100px; }
+    .eyebrow { color: var(--accent); font-weight: 600; letter-spacing: 2px; }
+    h1 { font-size: clamp(42px, 7vw, 76px); line-height: 1.12; margin: 16px 0; }
+    h2 { font-size: 30px; margin: 0 0 28px; }
+    h3 { margin: 0 0 10px; font-size: 19px; }
+    p { color: var(--muted); }
+    .hero p { max-width: 680px; font-size: 19px; }
+    .highlight { color: var(--accent); }
+    .buttons { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 32px; }
+    .button {
+      display: inline-block;
+      padding: 12px 22px;
+      border-radius: 9px;
+      background: var(--accent);
+      color: #07111d;
+      font-weight: 700;
+    }
+    .button.outline {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+    .grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 20px; }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      padding: 26px;
+      border-radius: 15px;
+    }
+    .tags { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 16px; }
+    .tag {
+      border: 1px solid var(--border);
+      background: #1c2a40;
+      color: #d8e6f3;
+      padding: 5px 11px;
+      border-radius: 7px;
+      font-size: 13px;
+    }
+    .meta { color: var(--accent); font-size: 14px; margin: 0 0 10px; }
+    .project-link { color: var(--accent); font-weight: 600; }
+    footer {
+      text-align: center;
+      border-top: 1px solid var(--border);
+      padding: 30px 0;
+      color: var(--muted);
+    }
+    @media (max-width: 700px) {
+      nav { flex-direction: column; padding: 14px 0; }
+      .nav-links { justify-content: center; gap: 14px; }
+      .grid { grid-template-columns: 1fr; }
+      section { padding: 55px 0; }
+      .hero { padding: 75px 0; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav class="container">
+    <a class="logo" href="#home">HR.</a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="eyebrow">HELLO, I'M</div>
+      <h1>Harini <span class="highlight">Reddy.</span></h1>
+      <h2>Software Engineer</h2>
+      <p>
+        I build scalable applications and data-driven solutions
+        using Java, Python, Spring Boot, React, and cloud technologies.
+        I enjoy solving complex problems and turning ideas into
+        reliable, practical software.
+      </p>
+      <div class="buttons">
+        <a class="button" href="#projects">Explore My Work</a>
+        <a class="button outline"
+           href="https://github.com/HariniReddyGade"
+           target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="button outline"
+           href="https://www.linkedin.com/in/harinigade/"
+           target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2>About <span class="highlight">Me</span></h2>
+      <p>
+        I'm a Software Engineer with over 5 years of experience
+        developing enterprise applications, backend services,
+        and data-driven systems. My background includes full-stack
+        development, RESTful APIs, microservices, database
+        optimization, cloud integration, and production support.
+      </p>
+      <p>
+        I have a Master's degree in Data Science from the
+        New Jersey Institute of Technology. I enjoy learning
+        new technologies, collaborating with teams, and building
+        solutions that make a meaningful impact.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2>Technical <span class="highlight">Skills</span></h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Languages</h3>
+          <div class="tags">
+            <span class="tag">Java</span>
+            <span class="tag">Python</span>
+            <span class="tag">SQL</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">TypeScript</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Backend & Frontend</h3>
+          <div class="tags">
+            <span class="tag">Spring Boot</span>
+            <span class="tag">REST APIs</span>
+            <span class="tag">Microservices</span>
+            <span class="tag">React</span>
+            <span class="tag">Angular</span>
+            <span class="tag">HTML & CSS</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Cloud & DevOps</h3>
+          <div class="tags">
+            <span class="tag">AWS</span>
+            <span class="tag">GCP</span>
+            <span class="tag">Azure</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Terraform</span>
+            <span class="tag">Jenkins</span>
+            <span class="tag">GitHub Actions</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Data & Analytics</h3>
+          <div class="tags">
+            <span class="tag">BigQuery</span>
+            <span class="tag">PySpark</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">NumPy</span>
+            <span class="tag">Scikit-learn</span>
+            <span class="tag">SQL Optimization</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="container">
+      <h2>Professional <span class="highlight">Experience</span></h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Software Engineer</h3>
+          <p class="meta">QuantumAI Solutions Inc. | Oct 2026 – Present</p>
+          <p>Building data-driven applications, Python ETL pipelines,
+          SQL workflows, and integrations between machine learning
+          services and backend applications.</p>
+        </div>
+        <div class="card">
+          <h3>Full Stack Developer</h3>
+          <p class="meta">Shrive Solutions LLC | Aug 2023 – Sep 2026</p>
+          <p>Developed and modernized enterprise applications using
+          Spring Boot, REST APIs, React, SQL, and cloud-based
+          development and deployment workflows.</p>
+        </div>
+        <div class="card">
+          <h3>Software Developer Intern</h3>
+          <p class="meta">Shrive Solutions LLC | Jan 2023 – Jul 2023</p>
+          <p>Developed Python services and data-processing workflows
+          supporting cloud-based healthcare applications.</p>
+        </div>
+        <div class="card">
+          <h3>Software Developer</h3>
+          <p class="meta">Wipro | Jan 2020 – Nov 2021</p>
+          <p>Worked on Java and Spring enterprise applications,
+          SQL integrations, and Angular-based user interfaces.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2>Featured <span class="highlight">Projects</span></h2>
+      <p>Selected projects from my GitHub repositories.</p>
+      <div class="grid">
+        <div class="card">
+          <h3>Wine Quality Prediction</h3>
+          <p>A machine learning project exploring prediction
+          of wine quality using data analysis and modeling.</p>
+          <a class="project-link"
+             href="https://github.com/HariniReddyGade/Wine-Quality-Prediction"
+             target="_blank" rel="noopener noreferrer">
+            View on GitHub →
+          </a>
+        </div>
+        <div class="card">
+          <h3>Flight Data Analysis</h3>
+          <p>An exploratory data analysis project examining
+          flight-related datasets and patterns.</p>
+          <a class="project-link"
+             href="https://github.com/HariniReddyGade/Flight-Data-Analysis"
+             target="_blank" rel="noopener noreferrer">
+            View on GitHub →
+          </a>
+        </div>
+        <div class="card">
+          <h3>Sales Forecasting</h3>
+          <p>A data-focused project exploring approaches to
+          forecasting future sales.</p>
+          <a class="project-link"
+             href="https://github.com/HariniReddyGade/Predicting-Future-Sales-"
+             target="_blank" rel="noopener noreferrer">
+            View on GitHub →
+          </a>
+        </div>
+        <div class="card">
+          <h3>Enzyme Stability Prediction</h3>
+          <p>A predictive modeling project focused on
+          enzyme stability and machine learning.</p>
+          <a class="project-link"
+             href="https://github.com/HariniReddyGade/Novozymes-Enzymes-Stability-Prediction"
+             target="_blank" rel="noopener noreferrer">
+            View on GitHub →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Let's <span class="highlight">Connect</span></h2>
+      <p>
+        I'm interested in software engineering opportunities
+        involving full-stack development, backend systems,
+        cloud technologies, and data-driven products.
+      </p>
+      <div class="buttons">
+        <a class="button" href="mailto:gadeharinireddy@gmail.com">
+          Email Me
+        </a>
+        <a class="button outline"
+           href="https://www.linkedin.com/in/harinigade/"
+           target="_blank" rel="noopener noreferrer">
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    © <span id="year"></span> Harini Reddy.
+    Built with HTML, CSS & JavaScript.
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent =
+    new Date().getFullYear();
+</script>
+
+</body>
+</html>
